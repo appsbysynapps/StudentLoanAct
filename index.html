@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="leaflet/leaflet.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.lazy').slick({
+            draggable: false,
+            arrows: false,
+            autoplay: true,
+            slidesToShow: 5,
+            autoplaySpeed: 1000
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class='BGcover' align="center">
+        <h1 class="heading"><span>STUDENT LOAN TAX DEBT RELIEF ACT</span></h1>
+        <span class='desc'>We all need relief, because the</br>cost of college is punishing enough.</span>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT THE BILL</a></li>
+            <li><a href="#whatitdoes">WHAT IT DOES</a></li>
+            <li><a href="#background">BACKGROUND</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="header"><span>SUPPORTING GROUPS</span></div>
+    <div align="center">
+        <div class="lazy">
+            <img src="css/images/1.png" />
+            <img src="css/images/2.png" />
+            <img src="css/images/3.png" />
+            <img src="css/images/4.png" />
+            <img src="css/images/5.png" />
+            <img src="css/images/6.png" />
+        </div>
+    </div>
+    <div class="header"><span>SPONSORING MEMBERS</span></div>
+    <div align="center">
+        <div class="row">
+            <div class="col-5">
+                <p>Rep. Earl Blumenauer</p>
+                <p>Rep. Julia Brownley</p>
+            </div>
+            <div class="col-5">
+                <p>Rep. Suzanne Bonamici</p>
+                <p>Rep. Lois Capps</p>
+            </div>
+            <div class="col-5">
+                <p>Rep. Brendan Boyle</p>
+                <p>Rep. Tony Cardenas</p>
+            </div>
+        </div>
+    </div>
+    <div class="header"><span>SUPPORTING DISTRICTS</span></div>
+    <div class="mapDiv" align="center">
+        <div id="map" style="height:75vh"></div>
+    </div>
+    <div class="header2" id="about"><span>ABOUT THE BILL</span></div>
+    <div class="section">
+        <p class="words">Student loan borrowers who dutifully pay their loans using the income-based or income-contingent repayment plans can potentially have a massive tax bill at the end of 20 or 25 years of paying their loans. This bill helps student loan borrowers who repay their loans using the income-based repayment or the income-contingent repayment programs. These programs make loan repayments more affordable for student loan borrowers by reducing the monthly payment owed.</p>
+        <h1 id="whatitdoes" class="subheading">What It Does</h1>
+        <p class="words">Establishes of a federal tax exemption on the forgiven loan amount for borrowers in the Income Contingent Repayment (ICR) and Income Based Repayment (IBR) programs.</br>Repayment has $20,000 in loans forgiven, this bill will prevent the taxpayer from taking into gross income the $20,000.</p>
+        <h1 class="subheading">Cost Estimate</h1>
+        <p class="words">The Treasury estimates the proposal will cost $5 million over 10 years.</p>
+    </div>
+    <div class="header2" id="background"><span>BACKGROUND</span></div>
+    <div class="section">
+        <p class="words">
+            The College Cost Reduction and Access Act (CCRAA) (P.L. 110-84), Congress sought to increase college access and affordability by lowering the burden of student loan debt through a new IBR program. Under IBR, students can lower their monthly loan payments, which are capped at a percentage of their disposable incomes. The law provides that a student borrower with debt remaining for a period of time (specified by the Secretary of Education) not exceeding 25 years of payments will have the balance of their federal student loan debt canceled. In addition to IBR, CCRAA created two other loan forgiveness programs, Public Service Loan Forgiveness (PSLF) for borrowers working in government and certain nonprofit jobs and TEACH to assist future teachers. The federal Direct Loan Program has had a similar loan forgiveness program, ICR, since 1994.</br>Under current tax law, some forgiveness programs are excluded from taxable income, including PSLF and TEACH. However, according to the Internal Revenue Service, loan forgiveness under IBR and ICR would be treated as taxable income for the student borrower. The Student Loan Tax Debt Relief Act would remedy this problem by expanding the current income tax exclusion to cover amounts forgiven under the IBR and ICR programs. By enacting this needed bill, Congress can ensure that IBR and ICR really do enhance college access and affordability and thereby advance the intent of Congress when it originally authorized these important programs.
+        </p>
+    </div>
+    <div class="header2" id="contact"><span>CONTACT</span></div>
+    <div class="section">
+        <p class="words">
+            To learn more about the legislation or to cosponsor the legislation, please contact Michael Gleeson in the office of Congressman Jim McDermott at <a href="mailto:michael.gleeson@mail.house.gov"><i class="mail1"> </i>michael.gleeson@mail.house.gov</a>.
+        </p>
+    </div>
+    <div class="row footer">
+        <div class="col-3">
+            <h1>STUDENT LOAN TAX</br>DEBT RELIEF ACT</h1>
+        </div>
+        <div class="col-3">
+            <p>Michael Gleeson</p>
+            <a href="mailto:michael.gleeson@mail.house.gov"><i class="mail1"> </i>michael.gleeson@mail.house.gov</a>
+            <p>Office of Congressman Jim McDermott</p>
+        </div>
+        <div class="col-3">
+            <p>Copyright 2015.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var map = L.map('map').setView([37.8, -96], 4);
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' + ' < a href = "http://creativecommons.org/licenses/by-sa/2.0/" > CC - BY - SA < /a>, ' + 'Imagery © <a href="http:/ / mapbox.com ">Mapbox</a>',
+        id: 'mapbox.light'
+    }).addTo(map);
+    var marker = L.marker([45.5200, -122.6819]).addTo(map);
+    var marker = L.marker([45.4869, -122.8036]).addTo(map);
+    var marker = L.marker([39.9500, -75.1667]).addTo(map);
+    var marker = L.marker([34.2000, -117.8]).addTo(map);
+    var marker = L.marker([34.6, -119.7]).addTo(map);
+    var marker = L.marker([34.2667, -118.4303]).addTo(map);
+    </script>
+</body>
+
+</html>
