@@ -1,6 +1,22 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeue Regular.otf');
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('BebasNeue Book.otf');
+}
+
+@font-face {
+    font-family: 'Bebas Neue Light';
+    src: url('BebasNeue Light.otf');
+}
+
+
 .BGcover {
     min-height: 600px;
-    background-image: url('images/banner.png');
+    background-image: url('images/better_banner.png');
     background-repeat: none;
     background-size: 100%;
     -webkit-background-size: cover;
@@ -12,6 +28,8 @@
 
 body {
     margin: 0 0 0 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .heading {
@@ -31,14 +49,15 @@ h1 span {
 .desc {
     color: white;
     font-size: 30px;
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
 }
 
 #menu {
     width: 100%;
-    height: 50px;
+    height: auto;
     font-size: 25px;
-    font-family: "Bebas Neue", Arial;
+    font-family: "Bebas Neue Light", Arial;
     font-weight: bold;
     text-align: center;
     background-color: green;
@@ -52,8 +71,9 @@ h1 span {
 
 #menu li {
     width: 20%;
+    height: 100%;
     display: inline;
-    padding: 12px 15px 10px 15px;
+    padding: 12px 15px;
 }
 
 #menu a {
@@ -89,13 +109,14 @@ h1 span {
     color: white;
     background-color: green;
     padding: 10px;
-    font-family: Arial;
+    font-family: "Bebas Neue";
 }
 
 .header2 {
     padding-left: 3em;
     margin-top: 3em;
     position: relative;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .header2:before {
@@ -105,19 +126,19 @@ h1 span {
     height: 10px;
     left: 3em;
     right: 0;
-    top: 15px;
+    top: 25px;
     background-color: green;
     z-index: -1
 }
 
 .header2 span {
-    font-size: 40px;
+    font-size: 60px;
     color: green;
     background-color: white;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
-    font-family: Arial;
+    font-family: "Bebas Neue";
 }
 
 .lazy {
@@ -156,11 +177,15 @@ h1 span {
 
 .words {
     padding-right: 3em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    line-height: 1.4em;
 }
 
 .subheading {
     color:lightgreen;
-    font-family: Arial;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue Book', sans-serif;
 }
 
 a {
