@@ -12,14 +12,28 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="leaflet/leaflet.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         $('.lazy').slick({
             draggable: false,
             arrows: false,
             autoplay: true,
-            slidesToShow: 5,
-            autoplaySpeed: 1000
+            slidesToShow: 3,
+            autoplaySpeed: 1000,
+            variableWidth: true,
+            pauseOnHover: false
+        });
+
+        $('.lazyReps').slick({
+            draggable: false,
+            arrows: false,
+            autoplay: true,
+            rows: 2,
+            slidesPerRow: 3,
+            slidesToShow: 3,
+            autoplaySpeed: 1000,
+            pauseOnHover: false
         });
     });
     </script>
@@ -42,29 +56,47 @@
     <div class="header"><span>SUPPORTING GROUPS</span></div>
     <div align="center">
         <div class="lazy">
-            <img src="css/images/1.png" />
-            <img src="css/images/2.png" />
-            <img src="css/images/3.png" />
-            <img src="css/images/4.png" />
-            <img src="css/images/5.png" />
-            <img src="css/images/6.png" />
+            <img class="sponsor" src="css/images/AACC.jpg" />
+            <img class="sponsor" src="css/images/AASCU.png" />
+            <img class="sponsor" src="css/images/ACE.gif" />
+            <img class="sponsor" src="css/images/AAU.jpg" />
+            <img class="sponsor" src="css/images/AGB.jpg" />
+            <img class="sponsor" src="css/images/AJCU.jpg" />
+            <img class="sponsor" src="css/images/APLU.jpg" />
+            <img class="sponsor" src="css/images/CUPA-HR.jpeg" />
+            <img class="sponsor" src="css/images/CCCU.gif" />
+            <img class="sponsor" src="css/images/COE.jpg" />
+            <img class="sponsor" src="css/images/NASPA.png" />
+            <img class="sponsor" src="css/images/NAIS.jpg" />
+            <img class="sponsor" src="css/images/UNCF.jpg" />
+            <img class="sponsor" src="css/images/ICAS.png" />
+            <img class="sponsor" src="css/images/EJW.png" />
+            <img class="sponsor" src="css/images/USSAF.jpg" />
+            <img class="sponsor" src="css/images/AFT.gif" />
+            <img class="sponsor" src="css/images/YI.jpg" />
         </div>
     </div>
     <div class="header"><span>SPONSORING MEMBERS</span></div>
+    </br>
+    </br>
+    <!-- <div align="center">
+        <div class="lazyReps">
+            <p>Rep. Earl Blumenauer</p>
+            <p>Rep. Julia Brownley</p>
+        </div>
+    </div> -->
     <div align="center" style="font-family:'Nunito', sans-serif; font-weight:300">
-        <div class="row">
-            <div class="col-5">
-                <p>Rep. Earl Blumenauer</p>
-                <p>Rep. Julia Brownley</p>
-            </div>
-            <div class="col-5">
-                <p>Rep. Suzanne Bonamici</p>
-                <p>Rep. Lois Capps</p>
-            </div>
-            <div class="col-5">
-                <p>Rep. Brendan Boyle</p>
-                <p>Rep. Tony Cardenas</p>
-            </div>
+        <div class="col-5">
+            <p>Rep. Earl Blumenauer</br>Rep. Suzanne Bonamici</br>Rep. Brendan Boyle</br>Rep.Julia Brownley</br>Rep. Lois Capps</br>Rep. Tony Cardenas</br>Rep. David Cicilline</br>Rep. Katherine Clark</br>Rep. Steve Cohen</br>Rep. Gerry Connolly</br>Rep. John Conyers</br>Rep. Joe Courtney</p>
+        </div>
+        <div class="col-5">
+            <p>Rep. Elijah Cummings</br>Rep. Danny K. Davis</br>Rep. Peter DeFazio</br>Rep. Suzan DelBene</br>Rep. Mark DeSaulnier</br>Rep. Lloyd Doggett</br>Rep. Donna Edwards</br>Rep. Raul Grijalva</br>Rep. Luis Gutierrez</br>Rep. Alcee Hastings</br>Rep. Ruben Hinojosa</br>Rep. Mike Honda</p>
+        </div>
+        <div class="col-5">
+            <p>Rep. Marcy Kaptur</br>Rep. Derek Kilmer</br>Rep. Ron Kind</br>Rep. James Langevin</br>Rep. Rick Larsen</br>Rep. John Larson</br>Rep. Brenda L. Lawrence</br>Rep. Barbara Lee</br>Rep. Jim McGovern</br>Rep. Jerry McNerney</br>Rep. Gregory Meeks</br>Rep. Gwen Moore</p>
+        </div>
+        <div class="col-5">
+            <p>Rep. Grace Napolitano</br>Rep. Eleanor Holmes Norton</br>Rep. Charles B. Rangel</br>Rep. Bobby Rush</br>Rep. Tim Ryan</br>Rep. Jan Schakowsky</br>Rep. Adam Smith</br>Rep. Eric Swalwell</br>Rep. Chris Van Hollen</br>Rep. Juan Vargas</br>Rep. Peter Welch</br>Rep. Frederica Wilson</br>Rep. John Yarmuth</p>
         </div>
     </div>
     <div class="header"><span>SUPPORTING DISTRICTS</span></div>
@@ -82,7 +114,8 @@
     <div class="header2" id="background"><span>BACKGROUND</span></div>
     <div class="section">
         <p class="words">
-            The College Cost Reduction and Access Act (CCRAA) (P.L. 110-84), Congress sought to increase college access and affordability by lowering the burden of student loan debt through a new IBR program. Under IBR, students can lower their monthly loan payments, which are capped at a percentage of their disposable incomes. The law provides that a student borrower with debt remaining for a period of time (specified by the Secretary of Education) not exceeding 25 years of payments will have the balance of their federal student loan debt canceled. In addition to IBR, CCRAA created two other loan forgiveness programs, Public Service Loan Forgiveness (PSLF) for borrowers working in government and certain nonprofit jobs and TEACH to assist future teachers. The federal Direct Loan Program has had a similar loan forgiveness program, ICR, since 1994.</br></br>Under current tax law, some forgiveness programs are excluded from taxable income, including PSLF and TEACH. However, according to the Internal Revenue Service, loan forgiveness under IBR and ICR would be treated as taxable income for the student borrower. The Student Loan Tax Debt Relief Act would remedy this problem by expanding the current income tax exclusion to cover amounts forgiven under the IBR and ICR programs. By enacting this needed bill, Congress can ensure that IBR and ICR really do enhance college access and affordability and thereby advance the intent of Congress when it originally authorized these important programs.
+            The College Cost Reduction and Access Act (CCRAA) (P.L. 110-84), Congress sought to increase college access and affordability by lowering the burden of student loan debt through a new IBR program. Under IBR, students can lower their monthly loan payments, which are capped at a percentage of their disposable incomes. The law provides that a student borrower with debt remaining for a period of time (specified by the Secretary of Education) not exceeding 25 years of payments will have the balance of their federal student loan debt canceled. In addition to IBR, CCRAA created two other loan forgiveness programs, Public Service Loan Forgiveness (PSLF) for borrowers working in government and certain nonprofit jobs and TEACH to assist future teachers. The federal Direct Loan Program has had a similar loan forgiveness program, ICR, since 1994.</br>
+            </br>Under current tax law, some forgiveness programs are excluded from taxable income, including PSLF and TEACH. However, according to the Internal Revenue Service, loan forgiveness under IBR and ICR would be treated as taxable income for the student borrower. The Student Loan Tax Debt Relief Act would remedy this problem by expanding the current income tax exclusion to cover amounts forgiven under the IBR and ICR programs. By enacting this needed bill, Congress can ensure that IBR and ICR really do enhance college access and affordability and thereby advance the intent of Congress when it originally authorized these important programs.
         </p>
     </div>
     <div class="header2" id="contact"><span>CONTACT</span></div>
@@ -92,33 +125,99 @@
         </p>
     </div>
     <div class="footer row">
-            <div class="col-3">
-                <h1 style="font-family:'Oswald'; font-size: 2.5em">STUDENT LOAN TAX</br>DEBT RELIEF ACT</h1>
-            </div>
-            <div class="col-3" style="font-family:'Nunito', sans-serif; font-weight:300">
-                <p>Michael Gleeson</p>
-                <a href="mailto:michael.gleeson@mail.house.gov"><i class="mail1"> </i>michael.gleeson@mail.house.gov</a>
-                <p>Office of Congressman Jim McDermott</p>
-            </div>
-            <div class="col-3" style="font-family:'Nunito', sans-serif; font-weight:300">
-                <p>Copyright 2015.</p>
-            </div>
+        <div class="col-3">
+            <h1 style="font-family:'Oswald'; font-size: 2.5em">STUDENT LOAN TAX</br>DEBT RELIEF ACT</h1>
         </div>
+        <div class="col-3" style="font-family:'Nunito', sans-serif; font-weight:300">
+            <p>Michael Gleeson</p>
+            <a href="mailto:michael.gleeson@mail.house.gov"><i class="mail1"> </i>michael.gleeson@mail.house.gov</a>
+            <p>Office of Congressman Jim McDermott</p>
+        </div>
+        <div class="col-3" style="font-family:'Nunito', sans-serif; font-weight:300">
+            <p>Copyright 2015.</p>
+        </div>
+    </div>
     </div>
     <script type="text/javascript">
     var map = L.map('map').setView([37.8, -96], 4);
 
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
-        maxZoom: 18,
-        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' + ' < a href = "http://creativecommons.org/licenses/by-sa/2.0/" > CC - BY - SA < /a>, ' + 'Imagery © <a href="http:/ / mapbox.com ">Mapbox</a>',
-        id: 'mapbox.light'
-    }).addTo(map);
-    var marker = L.marker([45.5200, -122.6819]).addTo(map);
-    var marker = L.marker([45.4869, -122.8036]).addTo(map);
-    var marker = L.marker([39.9500, -75.1667]).addTo(map);
-    var marker = L.marker([34.2000, -117.8]).addTo(map);
-    var marker = L.marker([34.6, -119.7]).addTo(map);
-    var marker = L.marker([34.2667, -118.4303]).addTo(map);
+    // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
+    //     maxZoom: 18,
+    //     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' + ' < a href = "http://creativecommons.org/licenses/by-sa/2.0/" > CC - BY - SA < /a>, ' + 'Imagery © <a href="http:/ / mapbox.com ">Mapbox</a>',
+    //     id: 'mapbox.light'
+    // }).addTo(map);
+
+    L.TopoJSON = L.GeoJSON.extend({
+        addData: function(jsonData) {
+            if (jsonData.type === "Topology") {
+                for (key in jsonData.objects) {
+                    geojson = topojson.feature(jsonData, jsonData.objects[key]);
+                    L.GeoJSON.prototype.addData.call(this, geojson);
+                }
+            } else {
+                L.GeoJSON.prototype.addData.call(this, jsonData);
+            }
+        }
+    });
+    var topoLayer = new L.TopoJSON();
+
+    $.getJSON('cd113.json')
+        .done(addTopoData);
+
+    function addTopoData(topoData) {
+        topoLayer.addData(topoData);
+        topoLayer.addTo(map);
+    }
+    // L.marker([45.5200, -122.6819]).addTo(map);
+    // L.marker([45.4869, -122.8036]).addTo(map);
+    // L.marker([39.9500, -75.1667]).addTo(map);
+    // L.marker([34.2000, -117.8]).addTo(map);
+    // L.marker([34.6, -119.7]).addTo(map);
+    // L.marker([41.8236, -71.4222]).addTo(map);
+    // L.marker([45.5200, -122.6819]).addTo(map);
+    // L.marker([41.3100, -72.9236]).addTo(map);
+    // L.marker([35.1174, -89.9711]).addTo(map);
+    // L.marker([42.4036, -83.1017]).addTo(map);
+    // L.marker([41.8369, -72.4606]).addTo(map);
+    // L.marker([39.2833, -76.6167]).addTo(map);
+    // L.marker([41.8369, -87.6847]).addTo(map);
+
+    // L.marker([45.4869, -122.8036]).addTo(map);
+    // L.marker([39.9500, -75.1667]).addTo(map);
+    // L.marker([34.2000, -117.8]).addTo(map);
+    // L.marker([34.6, -119.7]).addTo(map);
+    // L.marker([34.2667, -118.4303]).addTo(map);
+    // L.marker([45.5200, -122.6819]).addTo(map);
+    // L.marker([45.4869, -122.8036]).addTo(map);
+    // L.marker([39.9500, -75.1667]).addTo(map);
+    // L.marker([34.2000, -117.8]).addTo(map);
+    // L.marker([34.6, -119.7]).addTo(map);
+    // L.marker([34.2667, -118.4303]).addTo(map);
+    // L.marker([45.5200, -122.6819]).addTo(map);
+    // L.marker([45.4869, -122.8036]).addTo(map);
+    // L.marker([39.9500, -75.1667]).addTo(map);
+    // L.marker([34.2000, -117.8]).addTo(map);
+    // L.marker([34.6, -119.7]).addTo(map);
+    // L.marker([34.2667, -118.4303]).addTo(map);
+    // L.marker([45.5200, -122.6819]).addTo(map);
+    // L.marker([45.4869, -122.8036]).addTo(map);
+    // L.marker([39.9500, -75.1667]).addTo(map);
+    // L.marker([34.2000, -117.8]).addTo(map);
+    // L.marker([34.6, -119.7]).addTo(map);
+    // L.marker([34.2667, -118.4303]).addTo(map);
+    // L.marker([45.5200, -122.6819]).addTo(map);
+    // L.marker([45.4869, -122.8036]).addTo(map);
+    // L.marker([39.9500, -75.1667]).addTo(map);
+    // L.marker([34.2000, -117.8]).addTo(map);
+    // L.marker([34.6, -119.7]).addTo(map);
+    // L.marker([34.2667, -118.4303]).addTo(map);
+    // L.marker([45.5200, -122.6819]).addTo(map);
+    // L.marker([45.4869, -122.8036]).addTo(map);
+    // L.marker([39.9500, -75.1667]).addTo(map);
+    // L.marker([34.2000, -117.8]).addTo(map);
+    // L.marker([34.6, -119.7]).addTo(map);
+    // L.marker([34.2667, -118.4303]).addTo(map);
+    // L.marker([34.2667, -118.4303]).addTo(map);
     </script>
 </body>
 

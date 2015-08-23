@@ -83,7 +83,7 @@ h1 span {
     height: 10px;
     left: 0;
     right: 0;
-    top: 13px;
+    top: 17px;
     background-color: green;
     z-index: -1
 }
@@ -130,6 +130,8 @@ h1 span {
 .lazy {
     margin-top: 5em;
     width: 90%;
+    /*vertical-align: middle;*/
+    text-align: center;
 }
 
 .row {
